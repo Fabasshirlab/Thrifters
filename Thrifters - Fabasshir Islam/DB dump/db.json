@@ -1,0 +1,341 @@
+﻿{
+    "users":  {
+                  "value":  [
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b4d714c545127b9c38684"
+                                            },
+                                    "username":  "keya_b",
+                                    "email":  "cool06341@gmail.com",
+                                    "password":  "$2b$10$k7WQBqErbSigX.P2xuRItO.Sut95lmptu5OILe5PN72V8pgSflNP2",
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:02:09.113Z"
+                                                  },
+                                    "avatar":  "",
+                                    "location":  ""
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b4ff54c545127b9c38686"
+                                            },
+                                    "username":  "Sarah",
+                                    "email":  "sarah@yahoo.com",
+                                    "password":  "$2b$10$vRN4bddt2vNpXorbHPY6duoAmFyXYEOYFyecwgKbi1UTyhD8HviQC",
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:12:53.563Z"
+                                                  },
+                                    "avatar":  "",
+                                    "location":  ""
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b50324c545127b9c38687"
+                                            },
+                                    "username":  "fab_islam",
+                                    "email":  "fab_islam@yahoo.com",
+                                    "password":  "$2b$10$2KaRaYAq1AXUD9QDMYXpuuyekzaP1XF/nBK5QvIJBLYlstxFtTFGy",
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:13:54.935Z"
+                                                  },
+                                    "avatar":  "",
+                                    "location":  ""
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b50654c545127b9c38688"
+                                            },
+                                    "username":  "kirrran",
+                                    "email":  "kirango@gmail.com",
+                                    "password":  "$2b$10$IBOs3V0S2OjTsi/nFnuqSOzh0fbts/V8lHYdJVxOh.azKoQmOC.CS",
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:14:45.755Z"
+                                                  },
+                                    "avatar":  "",
+                                    "location":  ""
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b6ba6eb07d7bbcfc391de"
+                                            },
+                                    "username":  "loki_thor",
+                                    "email":  "lokiofasgard@outlook.com",
+                                    "password":  "$2b$10$0M.Jtb8ACjT6lQGw0oxW5eWVLAmJigHbX./R1ZZ/P/urgFeiHg4uG",
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-12T01:11:02.706Z"
+                                                  },
+                                    "avatar":  "",
+                                    "location":  ""
+                                }
+                            ],
+                  "Count":  5
+              },
+    "items":  {
+                  "value":  [
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b4e434c545127b9c38685"
+                                            },
+                                    "title":  "Warm Fluffy Jacket",
+                                    "description":  "Fluffy jacket for winter",
+                                    "category":  "clothing",
+                                    "condition":  "new",
+                                    "priceType":  "sale",
+                                    "price":  10,
+                                    "image":  "/uploads/M01043814/M01043814-1765494339602-966141511.jpg",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4d714c545127b9c38684"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:05:39.645Z"
+                                                  },
+                                    "itemKind":  "top",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b50b44c545127b9c38689"
+                                            },
+                                    "title":  "Nike Shoes",
+                                    "description":  "Black and White Nike Shoes",
+                                    "category":  "clothing",
+                                    "condition":  "very good",
+                                    "priceType":  "sale",
+                                    "price":  15,
+                                    "image":  "/uploads/M01043814/M01043814-1765494964843-66090509.avif",
+                                    "ownerId":  {
+                                                    "$oid":  "693b50654c545127b9c38688"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:16:04.856Z"
+                                                  },
+                                    "itemKind":  "footwear",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b51074c545127b9c3868a"
+                                            },
+                                    "title":  "Brown Suede Jacket",
+                                    "description":  "Brown Suede Jacket",
+                                    "category":  "clothing",
+                                    "condition":  "new",
+                                    "priceType":  "sale",
+                                    "price":  20,
+                                    "image":  "/uploads/M01043814/M01043814-1765495047435-158749200.webp",
+                                    "ownerId":  {
+                                                    "$oid":  "693b50654c545127b9c38688"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:17:27.445Z"
+                                                  },
+                                    "itemKind":  "top",
+                                    "status":  "sold out",
+                                    "purchasedBy":  {
+                                                        "$oid":  "693b4d714c545127b9c38684"
+                                                    },
+                                    "purchaseDetails":  {
+                                                            "address":  "Ilford",
+                                                            "last4":  "4346",
+                                                            "purchasedAt":  {
+                                                                                "$date":  "2025-12-12T00:18:06.646Z"
+                                                                            }
+                                                        }
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b518c4c545127b9c3868b"
+                                            },
+                                    "title":  "Iphone 13 Pro Max",
+                                    "description":  "Used for 2 years",
+                                    "category":  "electronics",
+                                    "condition":  "good",
+                                    "priceType":  "sale",
+                                    "price":  10,
+                                    "image":  "/uploads/M01043814/M01043814-1765495180647-895560368.jpg",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4ff54c545127b9c38686"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:19:40.658Z"
+                                                  },
+                                    "itemKind":  "accessory",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b51ce4c545127b9c3868c"
+                                            },
+                                    "title":  "Airpods",
+                                    "description":  "Not used",
+                                    "category":  "electronics",
+                                    "condition":  "new",
+                                    "priceType":  "sale",
+                                    "price":  50,
+                                    "image":  "/uploads/M01043814/M01043814-1765495246882-297429622.jpg",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4ff54c545127b9c38686"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:20:46.919Z"
+                                                  },
+                                    "itemKind":  "accessory",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b52134c545127b9c3868d"
+                                            },
+                                    "title":  "The Summer I turned Pretty Books",
+                                    "description":  "All three books in good condition",
+                                    "category":  "books",
+                                    "condition":  "very good",
+                                    "priceType":  "free",
+                                    "price":  0,
+                                    "image":  "/uploads/M01043814/M01043814-1765495315584-735284577.jpg",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4ff54c545127b9c38686"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:21:55.594Z"
+                                                  },
+                                    "itemKind":  "accessory",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b52694c545127b9c3868e"
+                                            },
+                                    "title":  "Jeans",
+                                    "description":  "White Jeans New without tags",
+                                    "category":  "clothing",
+                                    "condition":  "new",
+                                    "priceType":  "sale",
+                                    "price":  15,
+                                    "image":  "/uploads/M01043814/M01043814-1765495401199-393870065.webp",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4ff54c545127b9c38686"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:23:21.207Z"
+                                                  },
+                                    "itemKind":  "bottom",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                },
+                                {
+                                    "_id":  {
+                                                "$oid":  "693b58dfc2b45e1aaebf34ab"
+                                            },
+                                    "title":  "Boots",
+                                    "description":  "Ankle Boots",
+                                    "category":  "clothing",
+                                    "condition":  "new",
+                                    "priceType":  "sale",
+                                    "price":  10,
+                                    "image":  "/uploads/M01043814/M01043814-1765497055055-475307208.jpeg",
+                                    "ownerId":  {
+                                                    "$oid":  "693b4d714c545127b9c38684"
+                                                },
+                                    "createdAt":  {
+                                                      "$date":  "2025-12-11T23:50:55.075Z"
+                                                  },
+                                    "itemKind":  "footwear",
+                                    "status":  "active",
+                                    "purchasedBy":  null,
+                                    "purchaseDetails":  null
+                                }
+                            ],
+                  "Count":  8
+              },
+    "follows":  {
+                    "value":  [
+                                  {
+                                      "_id":  {
+                                                  "$oid":  "693b58f73668d1e1755d0c41"
+                                              },
+                                      "followerId":  {
+                                                         "$oid":  "693b4d714c545127b9c38684"
+                                                     },
+                                      "followedId":  {
+                                                         "$oid":  "693b50654c545127b9c38688"
+                                                     },
+                                      "createdAt":  {
+                                                        "$date":  "2025-12-11T23:51:19.765Z"
+                                                    }
+                                  },
+                                  {
+                                      "_id":  {
+                                                  "$oid":  "693b637b3668d1e1755d0c43"
+                                              },
+                                      "followerId":  {
+                                                         "$oid":  "693b4d714c545127b9c38684"
+                                                     },
+                                      "followedId":  {
+                                                         "$oid":  "693b4ff54c545127b9c38686"
+                                                     },
+                                      "createdAt":  {
+                                                        "$date":  "2025-12-12T00:36:11.079Z"
+                                                    }
+                                  },
+                                  {
+                                      "_id":  {
+                                                  "$oid":  "693b6bb43668d1e1755d0c44"
+                                              },
+                                      "followedId":  {
+                                                         "$oid":  "693b4ff54c545127b9c38686"
+                                                     },
+                                      "followerId":  {
+                                                         "$oid":  "693b6ba6eb07d7bbcfc391de"
+                                                     },
+                                      "createdAt":  {
+                                                        "$date":  "2025-12-12T01:11:16.957Z"
+                                                    }
+                                  }
+                              ],
+                    "Count":  3
+                },
+    "favorites":  {
+                      "value":  [
+                                    {
+                                        "_id":  {
+                                                    "$oid":  "693b59433668d1e1755d0c42"
+                                                },
+                                        "itemId":  {
+                                                       "$oid":  "693b52694c545127b9c3868e"
+                                                   },
+                                        "userId":  {
+                                                       "$oid":  "693b4d714c545127b9c38684"
+                                                   },
+                                        "createdAt":  {
+                                                          "$date":  "2025-12-11T23:52:35.355Z"
+                                                      }
+                                    },
+                                    {
+                                        "_id":  {
+                                                    "$oid":  "693b6c613668d1e1755d0c45"
+                                                },
+                                        "itemId":  {
+                                                       "$oid":  "693b52134c545127b9c3868d"
+                                                   },
+                                        "userId":  {
+                                                       "$oid":  "693b4d714c545127b9c38684"
+                                                   },
+                                        "createdAt":  {
+                                                          "$date":  "2025-12-12T01:14:09.192Z"
+                                                      }
+                                    }
+                                ],
+                      "Count":  2
+                  }
+}

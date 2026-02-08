@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "username": "keya_b",
+  "email": "cool06341@gmail.com",
+  "password": "$2b$10$k7WQBqErbSigX.P2xuRItO.Sut95lmptu5OILe5PN72V8pgSflNP2",
+  "createdAt": {
+    "$date": "2025-12-11T23:02:09.113Z"
+  },
+  "avatar": "",
+  "location": ""
+},
+{
+  "_id": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "username": "Sarah",
+  "email": "sarah@yahoo.com",
+  "password": "$2b$10$vRN4bddt2vNpXorbHPY6duoAmFyXYEOYFyecwgKbi1UTyhD8HviQC",
+  "createdAt": {
+    "$date": "2025-12-11T23:12:53.563Z"
+  },
+  "avatar": "",
+  "location": ""
+},
+{
+  "_id": {
+    "$oid": "693b50324c545127b9c38687"
+  },
+  "username": "fab_islam",
+  "email": "fab_islam@yahoo.com",
+  "password": "$2b$10$2KaRaYAq1AXUD9QDMYXpuuyekzaP1XF/nBK5QvIJBLYlstxFtTFGy",
+  "createdAt": {
+    "$date": "2025-12-11T23:13:54.935Z"
+  },
+  "avatar": "",
+  "location": ""
+},
+{
+  "_id": {
+    "$oid": "693b50654c545127b9c38688"
+  },
+  "username": "kirrran",
+  "email": "kirango@gmail.com",
+  "password": "$2b$10$IBOs3V0S2OjTsi/nFnuqSOzh0fbts/V8lHYdJVxOh.azKoQmOC.CS",
+  "createdAt": {
+    "$date": "2025-12-11T23:14:45.755Z"
+  },
+  "avatar": "",
+  "location": ""
+},
+{
+  "_id": {
+    "$oid": "693b6ba6eb07d7bbcfc391de"
+  },
+  "username": "loki_thor",
+  "email": "lokiofasgard@outlook.com",
+  "password": "$2b$10$0M.Jtb8ACjT6lQGw0oxW5eWVLAmJigHbX./R1ZZ/P/urgFeiHg4uG",
+  "createdAt": {
+    "$date": "2025-12-12T01:11:02.706Z"
+  },
+  "avatar": "",
+  "location": ""
+}]

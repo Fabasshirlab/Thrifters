@@ -1,0 +1,184 @@
+[{
+  "_id": {
+    "$oid": "693b4e434c545127b9c38685"
+  },
+  "title": "Warm Fluffy Jacket",
+  "description": "Fluffy jacket for winter",
+  "category": "clothing",
+  "condition": "new",
+  "priceType": "sale",
+  "price": 10,
+  "image": "/uploads/M01043814/M01043814-1765494339602-966141511.jpg",
+  "ownerId": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:05:39.645Z"
+  },
+  "itemKind": "top",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b50b44c545127b9c38689"
+  },
+  "title": "Nike Shoes",
+  "description": "Black and White Nike Shoes",
+  "category": "clothing",
+  "condition": "very good",
+  "priceType": "sale",
+  "price": 15,
+  "image": "/uploads/M01043814/M01043814-1765494964843-66090509.avif",
+  "ownerId": {
+    "$oid": "693b50654c545127b9c38688"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:16:04.856Z"
+  },
+  "itemKind": "footwear",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b51074c545127b9c3868a"
+  },
+  "title": "Brown Suede Jacket",
+  "description": "Brown Suede Jacket",
+  "category": "clothing",
+  "condition": "new",
+  "priceType": "sale",
+  "price": 20,
+  "image": "/uploads/M01043814/M01043814-1765495047435-158749200.webp",
+  "ownerId": {
+    "$oid": "693b50654c545127b9c38688"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:17:27.445Z"
+  },
+  "itemKind": "top",
+  "status": "sold out",
+  "purchasedBy": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "purchaseDetails": {
+    "address": "Ilford",
+    "last4": "4346",
+    "purchasedAt": {
+      "$date": "2025-12-12T00:18:06.646Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "693b518c4c545127b9c3868b"
+  },
+  "title": "Iphone 13 Pro Max",
+  "description": "Used for 2 years",
+  "category": "electronics",
+  "condition": "good",
+  "priceType": "sale",
+  "price": 10,
+  "image": "/uploads/M01043814/M01043814-1765495180647-895560368.jpg",
+  "ownerId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:19:40.658Z"
+  },
+  "itemKind": "accessory",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b51ce4c545127b9c3868c"
+  },
+  "title": "Airpods",
+  "description": "Not used",
+  "category": "electronics",
+  "condition": "new",
+  "priceType": "sale",
+  "price": 50,
+  "image": "/uploads/M01043814/M01043814-1765495246882-297429622.jpg",
+  "ownerId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:20:46.919Z"
+  },
+  "itemKind": "accessory",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b52134c545127b9c3868d"
+  },
+  "title": "The Summer I turned Pretty Books",
+  "description": "All three books in good condition",
+  "category": "books",
+  "condition": "very good",
+  "priceType": "free",
+  "price": 0,
+  "image": "/uploads/M01043814/M01043814-1765495315584-735284577.jpg",
+  "ownerId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:21:55.594Z"
+  },
+  "itemKind": "accessory",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b52694c545127b9c3868e"
+  },
+  "title": "Jeans",
+  "description": "White Jeans New without tags",
+  "category": "clothing",
+  "condition": "new",
+  "priceType": "sale",
+  "price": 15,
+  "image": "/uploads/M01043814/M01043814-1765495401199-393870065.webp",
+  "ownerId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:23:21.207Z"
+  },
+  "itemKind": "bottom",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+},
+{
+  "_id": {
+    "$oid": "693b58dfc2b45e1aaebf34ab"
+  },
+  "title": "Boots",
+  "description": "Ankle Boots",
+  "category": "clothing",
+  "condition": "new",
+  "priceType": "sale",
+  "price": 10,
+  "image": "/uploads/M01043814/M01043814-1765497055055-475307208.jpeg",
+  "ownerId": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:50:55.075Z"
+  },
+  "itemKind": "footwear",
+  "status": "active",
+  "purchasedBy": null,
+  "purchaseDetails": null
+}]

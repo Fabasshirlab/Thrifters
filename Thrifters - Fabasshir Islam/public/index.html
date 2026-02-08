@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thrifters</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!------------------------- Landing Page---------------------------->
+    <div class="landing-wrapper" id="landing-wrapper">
+      <div class="landing-left">
+        <div class="hero-carousel">
+          <div class="hero-slide active">
+            <img src="/Images/img1.jpg" alt="1" />
+          </div>
+          <div class="hero-slide"><img src="/Images/img2.jpg" alt="2" /></div>
+          <div class="hero-slide"><img src="/Images/img3.jpg" alt="3" /></div>
+          <div class="hero-slide"><img src="/Images/img4.jpg" alt="4" /></div>
+          <div class="hero-slide"><img src="/Images/img5.jpg" alt="5" /></div>
+          <div class="hero-caption">Thrift smart. Dress unique.</div>
+        </div>
+      </div>
+
+      <div class="landing-right">
+        <div class="auth-card shadow-sm">
+          <div id="message-box" class="alert d-none" role="alert"></div>
+
+          <h2 class="mb-2">Thrifters</h2>
+          <p class="text-muted small mb-4">
+            A community to share, swap and discover unique second-hand finds.
+          </p>
+
+          <!------------------------------- Login form ------------------------------->
+          <form id="login-form">
+            <h5 class="mb-3">Login</h5>
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input
+                id="login-username"
+                type="text"
+                class="form-control"
+                autocomplete="username"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                id="login-password"
+                type="password"
+                class="form-control"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Login</button>
+            <p class="mt-3 mb-0 text-center small">
+              New here?
+              <a href="#" id="show-register-link">Create an account</a>
+            </p>
+          </form>
+
+          <!------------------------------------ Register -------------------------------->
+          <form id="register-form" class="d-none">
+            <h5 class="mb-3">Register</h5>
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input
+                id="reg-username"
+                type="text"
+                class="form-control"
+                autocomplete="username"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input
+                id="reg-email"
+                type="email"
+                class="form-control"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                id="reg-password"
+                type="password"
+                class="form-control"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <button class="btn btn-success w-100" type="submit">Sign up</button>
+            <p class="mt-3 mb-0 text-center small">
+              Already have an account?
+              <a href="#" id="show-login-link">Back to login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------ Main App ---------------------------------------->
+    <div id="app-main" class="app-main d-none">
+      <header class="app-header">
+        <div class="app-logo">Thrifters</div>
+
+        <form id="header-search-form" class="app-search">
+          <input
+            id="header-search-input"
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Search items..."
+          />
+
+          <button
+            id="header-search-btn"
+            type="button"
+            class="icon-btn"
+            title="Search"
+            aria-label="Search"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 21l-3.8-3.8M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <div class="app-header-right">
+          <button id="header-profile-btn" class="btn btn-sm me-2">
+            My Profile
+          </button>
+          <button id="logout-btn" class="btn btn-sm">Logout</button>
+        </div>
+      </header>
+
+      <nav class="app-subnav" id="app-nav">
+        <button data-section="feed-section" class="app-nav-link active">
+          Feed
+        </button>
+        <button data-section="favorites-section" class="app-nav-link">
+          Favourites
+        </button>
+        <button data-section="post-section" class="app-nav-link">
+          Post Item
+        </button>
+        <button data-section="purchased-items-section" class="app-nav-link">
+          Purchased Items
+        </button>
+      </nav>
+
+      <main class="app-content">
+        <section id="feed-section" class="app-section active">
+          <div class="feed-layout">
+            <!----------------------------- Left: local filters ---------------------->
+            <aside class="feed-sidebar-left">
+              <h5>Filter</h5>
+              <form id="feed-filter-form">
+                <div class="mb-2">
+                  <label class="form-label form-label-sm">Title contains</label>
+                  <input
+                    id="feed-filter-title"
+                    type="text"
+                    class="form-control form-control-sm"
+                    placeholder="e.g. hoodie"
+                  />
+                </div>
+                <div class="mb-2">
+                  <label class="form-label form-label-sm">Min price (£)</label>
+                  <input
+                    id="feed-filter-min-price"
+                    type="number"
+                    class="form-control form-control-sm"
+                    min="0"
+                    step="1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label form-label-sm">Max price (£)</label>
+                  <input
+                    id="feed-filter-max-price"
+                    type="number"
+                    class="form-control form-control-sm"
+                    min="0"
+                    step="1"
+                  />
+                </div>
+                <button
+                  class="btn btn-outline-primary btn-sm w-100"
+                  type="submit"
+                >
+                  Apply filters
+                </button>
+                <button
+                  class="btn btn-link btn-sm w-100 mt-1 p-0"
+                  type="button"
+                  id="feed-filter-clear"
+                >
+                  Clear
+                </button>
+              </form>
+            </aside>
+
+            <!------------------------------------ Center: feed grid ------------------------------------->
+            <div class="feed-main">
+              <h3 class="mb-1">Your Feed</h3>
+              <p class="text-muted">Items from sellers you follow.</p>
+              <div id="feed-items" class="card-grid"></div>
+              <section id="empty-feed-hint" class="mt-2"></section>
+            </div>
+
+            <!-------------------------------------- Right: suggested sellers + weather ----------------------- -->
+            <aside class="feed-sidebar-right">
+              <h5 class="mb-2">Suggested Sellers</h5>
+
+              <!--------------------Seller search ------------------------->
+              <form id="seller-search-form" class="seller-search mb-2">
+                <input
+                  id="seller-search-input"
+                  class="form-control form-control-sm"
+                  type="text"
+                  placeholder="Search sellers..."
+                />
+                <button
+                  id="seller-search-btn"
+                  type="submit"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  Search
+                </button>
+                <button
+                  id="seller-search-clear"
+                  type="button"
+                  class="btn btn-link btn-sm p-0"
+                >
+                  Clear
+                </button>
+              </form>
+
+              <div id="suggested-sellers-list" class="seller-list"></div>
+
+              <section id="weather-panel" class="card weather-panel mt-3">
+                <div class="w-head">
+                  <h6 class="mb-0">This Month’s Weather</h6>
+                  <small id="weather-city-label" class="text-muted"></small>
+                </div>
+                <div class="w-body">
+                  <div id="weather-anim" class="w-anim"></div>
+                  <div id="weather-out" class="w-summary text-muted">
+                    Detecting your location…
+                  </div>
+                </div>
+                <div class="w-suggest" id="weather-suggest"></div>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <!-------------------- Favourites ----------------------->
+        <section id="favorites-section" class="app-section d-none">
+          <h3 class="mb-2">Your Favourites</h3>
+          <div id="favorites-grid"></div>
+        </section>
+
+        <!------------------ Profile ------------------------->
+        <section id="profile-section" class="app-section d-none">
+          <h3 class="mb-3">Your Profile</h3>
+          <div class="profile-layout">
+            <aside id="profile-info" class="profile-card"></aside>
+            <div class="profile-main">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h4 class="mb-0">Your Items</h4>
+                <button id="profile-post-btn" class="btn btn-primary btn-sm">
+                  Post a new item
+                </button>
+              </div>
+              <div id="profile-items"></div>
+            </div>
+          </div>
+        </section>
+
+        <!---------------------- Purchased --------------------->
+        <section id="purchased-items-section" class="app-section d-none">
+          <h3>Your Purchased Items</h3>
+          <div id="purchased-items"></div>
+        </section>
+
+        <!---------------- Post Modal ----------------->
+        <div id="post-modal" class="app-modal d-none">
+          <div class="app-modal-backdrop"></div>
+          <div class="app-modal-dialog">
+            <div class="app-modal-header">
+              <h5 class="mb-0">Post a new item</h5>
+              <button
+                type="button"
+                id="post-modal-close"
+                class="btn-close-custom"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="app-modal-body">
+              <form id="post-item-form">
+                <div class="mb-3">
+                  <label class="form-label">Title</label>
+                  <input
+                    id="item-title"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Description</label>
+                  <textarea
+                    id="item-description"
+                    rows="3"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label">Category</label>
+                    <select id="item-category" class="form-select">
+                      <option value="clothing">Clothing</option>
+                      <option value="books">Books</option>
+                      <option value="home">Home</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label">Condition</label>
+                    <select id="item-condition" class="form-select">
+                      <option value="new">New</option>
+                      <option value="very good">Very Good</option>
+                      <option value="good">Good</option>
+                      <option value="used">Used</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label">Type</label>
+                    <select id="item-priceType" class="form-select">
+                      <option value="free">Free</option>
+                      <option value="sale">For Sale</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Item kind</label>
+                    <select id="item-kind" class="form-select">
+                      <option value="top">Top</option>
+                      <option value="bottom">Bottom</option>
+                      <option value="footwear">Footwear</option>
+                      <option value="accessory">Accessory</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Item Image</label>
+                    <input
+                      id="item-image"
+                      type="file"
+                      class="form-control"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Price (£)</label>
+                  <input
+                    id="item-price"
+                    type="number"
+                    class="form-control"
+                    min="0"
+                    step="1"
+                  />
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                  <button
+                    type="button"
+                    id="post-modal-cancel"
+                    class="btn btn-light"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="btn btn-primary"
+                    id="post-submit"
+                    type="submit"
+                  >
+                    Post Item
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------- Purchase Modal --------------------------->
+        <div id="purchase-modal" class="app-modal d-none">
+          <div class="app-modal-backdrop"></div>
+          <div class="app-modal-dialog">
+            <div class="app-modal-header">
+              <h5>Complete Your Purchase</h5>
+              <button class="btn-close-custom" id="purchase-close">
+                &times;
+              </button>
+            </div>
+            <div class="app-modal-body">
+              <form id="purchase-form">
+                <div class="form-group">
+                  <label for="address">Delivery Address</label>
+                  <textarea
+                    id="address"
+                    name="address"
+                    required
+                    placeholder="Enter your delivery address"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="card-number">Card Number</label>
+                  <input
+                    id="card-number"
+                    type="text"
+                    name="card-number"
+                    required
+                    placeholder="1234 5678 9012 3456"
+                  />
+                </div>
+                <div class="form-group">
+                  <button id="pay-button" type="submit">Pay</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!----------------------- Buyer Info Modal --------------->
+        <div id="buyer-info-modal" class="app-modal d-none">
+          <div class="app-modal-backdrop"></div>
+          <div class="app-modal-dialog">
+            <div class="app-modal-header">
+              <h5>Buyer Details</h5>
+              <button class="btn-close-custom" id="buyer-info-close">
+                &times;
+              </button>
+            </div>
+            <div class="app-modal-body" id="buyer-info-body">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

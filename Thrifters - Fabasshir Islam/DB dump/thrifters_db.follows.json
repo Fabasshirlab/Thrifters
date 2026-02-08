@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "693b58f73668d1e1755d0c41"
+  },
+  "followerId": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "followedId": {
+    "$oid": "693b50654c545127b9c38688"
+  },
+  "createdAt": {
+    "$date": "2025-12-11T23:51:19.765Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "693b637b3668d1e1755d0c43"
+  },
+  "followerId": {
+    "$oid": "693b4d714c545127b9c38684"
+  },
+  "followedId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "createdAt": {
+    "$date": "2025-12-12T00:36:11.079Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "693b6bb43668d1e1755d0c44"
+  },
+  "followedId": {
+    "$oid": "693b4ff54c545127b9c38686"
+  },
+  "followerId": {
+    "$oid": "693b6ba6eb07d7bbcfc391de"
+  },
+  "createdAt": {
+    "$date": "2025-12-12T01:11:16.957Z"
+  }
+}]
